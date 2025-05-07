@@ -36,7 +36,6 @@ type Order @key(fields: "id") {
   """
   items: [ProductVariant!]! @requiresScopes(scopes: [["order:items"]])
 }
-}
 
 type User @key(fields: "id") {
   id: ID!
